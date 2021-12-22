@@ -13,22 +13,22 @@ The fMRI data-set can be downloaded from  https://crcns.org/data-sets/vc/vim-2.
 
 Data processing steps:
  
- Split the training and test videos into segments and then extract the frames of these segments using "video_preprocessing.m".
+   Split the training and test videos into segments and then extract the frames of these segments using "video_preprocessing.m".
  
- The ground truth fMRI data can be processed using  "fmri_data_processing.m".
+   The ground truth fMRI data can be processed using  "fmri_data_processing.m".
  
- Features are extracted using "AlexNet_feature_extraction.py".
+   Features are extracted using "AlexNet_feature_extraction.py".
  
- These features are processed for dimensionality reduction using "AlexNet_feature_processing_encoding.m".
+   These features are processed for dimensionality reduction using "AlexNet_feature_processing_encoding.m".
  
- Using these dimensionality reduced features encode the voxel for all the three subjects using "encode.m".
+   Using these dimensionality reduced features encode the voxel for all the three subjects using "encode.m".
  
- You can predict the voxel responses of new videos using "predict_response.m".
+   You can predict the voxel responses of new videos using "predict_response.m".
     
- The NIQE scores can be computed using the official release which is included here.
+   The NIQE scores can be computed using the official release which is included here.
  
- The Spatial index and Temporal index of a video can be computed using "SITI.m".
+   The Spatial index and Temporal index of a video can be computed using "SITI.m".
  
- Compute the temporal curvature features with "curvature.m" and "curvature_16roi.m".
+   Compute the temporal curvature features with "curvature.m" and "curvature_16roi.m".
  
- Find the quality sore and its correlation with mos uaing "fMRI_NR_VQA.m".
+   Find the quality sore and its correlation with mos uaing "fMRI_NR_VQA.m".
