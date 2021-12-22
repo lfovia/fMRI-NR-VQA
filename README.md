@@ -10,6 +10,7 @@ N. S. Mahankali, M. Raghavan and S. S. Channappayya, "No-Reference Video Quality
    
 The fMRI data-set can be downloaded from  https://crcns.org/data-sets/vc/vim-2.
 
+
 Data processing steps:
  
  Split the training and test videos into segments and then extract the frames of these segments using "video_preprocessing.m".
@@ -28,4 +29,6 @@ Data processing steps:
  
  The Spatial index and Temporal index of a video can be computed using "SITI.m".
  
- Compute the temporal curvature features with "curvature.m".
+ Compute the temporal curvature features with "curvature.m" and "curvature_16roi.m".
+ 
+ Find the quality sore and its correlation with mos uaing "fMRI_NR_VQA.m".
